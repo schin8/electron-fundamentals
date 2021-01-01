@@ -1,13 +1,13 @@
 # ipc-demo
 
-## Development notes.
 
-Use the `electron` version of `nodemon`
+## Installation
 
-Install globally
-> npm i -g electromon 
+## Usage
 
-Run this app
-> electromon src/main.js
+Additional documentation can  be found in the [docs](./docs) directory
+
+## Contributing
+
 
 
