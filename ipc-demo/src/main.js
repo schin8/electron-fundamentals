@@ -2,6 +2,7 @@
 const electron = require("electron");
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
+const path = require('path')
 
 // App setup
 const countdown = require('./countdown')
@@ -14,7 +15,8 @@ app.on("ready", _ => {
     height: 400,
     width: 400,
     webPreferences: {
-        nodeIntegration: true
+        nodeIntegration: true,
+        preload: path.join(__dirname, 'preload.js')
     }
   });
 
