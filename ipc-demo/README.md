@@ -1,8 +1,8 @@
 # ipc-demo
-
-<img src="docs/diagram.png" align="left" style="border:1px dashed" alt="diagram" width="600"/>
-<br>
-
+<p>
+<img src="docs/diagram.png" align="left" style="border:1px dashed" alt="diagram" width="600"/><br>
+</p>
+  
 ## Installation
 
 ## Usage
