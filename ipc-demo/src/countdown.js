@@ -1,6 +1,4 @@
 
-module.exports = function test() {
-}
 module.exports = function countdown() {
 
     let count = 10
@@ -14,6 +12,5 @@ module.exports = function countdown() {
             clearInterval(timer)
         }
     }, 1000)
-}
-
+};
 
