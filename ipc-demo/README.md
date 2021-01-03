@@ -1,5 +1,5 @@
 # ipc-demo
-[diagram]("docs/diagram.png")
+![diagram]("docs/diagram.png")
   
 ## Installation
 
