@@ -2,6 +2,8 @@
 const electron = require("electron");
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
+const ipc = electron.ipcMain
+
 const path = require('path')
 
 // App setup
@@ -21,11 +23,19 @@ app.on("ready", _ => {
 
   mainWindow.loadURL(`file://${__dirname}/countdown.html`)
 
-  countdown()
-
   mainWindow.on("closed", (_) => {
     mainWindow = null;
-    console.log("Cleanup");
+    //console.log("Cleanup");
   });
 
 });
+
+// listen for `countdown-start`
+ipc.on('countdown-start', _ => {
+
+  countdown( count => {
+    // Send ipc event 'countdown' the value count
+    mainWindow.webContents.send('countdown-evt',count)
+  })
+
+})
